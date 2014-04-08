@@ -21,3 +21,5 @@ end
 
 gem 'jquery-rails'
 gem 'ejs'
+gem 'httparty'
+gem 'figaro'

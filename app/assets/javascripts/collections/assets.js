@@ -2,10 +2,14 @@ app.collections.AssetList = Backbone.Collection.extend({
 
   model: app.models.Asset,
   
-  url: '/data/assets.json',
+  keyword: 'new york',
+  
+  url: function(){
+    return '/nypl?q='+encodeURIComponent(this.keyword);
+  },
   
   parse: function(response) {
-    return response.assets;
+    return response.nyplAPI.response.result || [];  
   }
 
 });

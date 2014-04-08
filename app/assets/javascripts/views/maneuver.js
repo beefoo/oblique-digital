@@ -227,11 +227,19 @@ app.views.ManeuverView = Backbone.View.extend({
   },
   
   submitInput: function(value){
+    var that = this;
+    
+    /* TODO: save to database
     console.log('Submitting input: '+value);
-    this.model.set('input', value);
-    // TODO: save to database
-    // this.model.save();
-    this.parent.showRandomStrategy();
+    this.model.set('input', value);    
+    this.model.save(); */
+    
+    this.$el.addClass('out');
+    
+    setTimeout(function(){
+      that.parent.showRandomStrategy();
+    }, 500);
+    
   },
   
   template: function(options){

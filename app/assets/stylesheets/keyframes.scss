@@ -1,15 +1,5 @@
 @import "mixins";
 
-@include keyframes(rotate) {  
-  from {
-    @include transform(rotate(0deg));
-  }
-  
-  to{
-    @include transform(rotate(360deg));
-  }
-}
-
 @include keyframes(fade-in-right-big) {  
   from {
     @include opacity(0);
@@ -19,5 +9,29 @@
   to {
     @include opacity(1);
     @include transform(translateX(0));
+  }
+}
+
+@include keyframes(fade-out-left-big) {  
+  from {
+    @include opacity(1);
+    @include transform(translateX(0));
+  }
+
+  to {
+    @include opacity(0);
+    @include transform(translateX(-1000px));
+  }
+}
+
+@include keyframes (rotateplane) {
+  0% {
+    @include transform(perspective(120px) rotateX(0deg) rotateY(0deg));
+    
+  } 50% {
+    @include transform(perspective(120px) rotateX(-180.1deg) rotateY(0deg));
+    
+  } 100% {
+    @include transform(perspective(120px) rotateX(-180deg) rotateY(-179.9deg));
   }
 }
