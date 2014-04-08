@@ -1,0 +1,380 @@
+{"strategies": [
+		{
+			"prompt": "Is it organic or a machine?",
+			"type": "options",
+			"options": ["organic", "machine"]
+		},{
+			"prompt": "Draw a line to divide it",
+			"type": "line"
+		},{
+			"prompt": "Click the central point of interest",
+			"type": "point"
+		},{
+			"prompt": "Click the central point of desire",
+			"type": "point"
+		},{
+			"prompt": "Type the first instruction in the manual",
+			"type": "text"
+		},{
+			"prompt": "Will it grow or shrink?",
+			"type": "options",
+			"options": ["grow", "shrink"]
+		},{
+			"prompt": "What is missing?",
+			"type": "text"
+		},{
+			"prompt": "Drag a box around the supporting structure",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around the beginning",
+			"type": "rectangle"
+		},{
+			"prompt": "Is it stressed or composed?",
+			"type": "options",
+			"options": ["stressed", "composed"]
+		},{
+			"prompt": "Drag a box around the transition",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around the body",
+			"type": "rectangle"
+		},{
+			"prompt": "How many sections does it have?",
+			"type": "number"
+		},{
+			"prompt": "How many steps does it have?",
+			"type": "number"
+		},{
+			"prompt": "Is it consistent or inconsistent?",
+			"type": "options",
+			"options": ["consistent", "inconsistent"]
+		},{
+			"prompt": "Is it dirty or clean?",
+			"type": "options",
+			"options": ["dirty", "clean"]
+		},{
+			"prompt": "Is it extravagant or restrained?",
+			"type": "options",
+			"options": ["extravagant", "restrained"]
+		},{
+			"prompt": "Does it breathe?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Draw a line to make a bridge",
+			"type": "line"
+		},{
+			"prompt": "Will your mom approve?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Is it ambiguous or specific?",
+			"type": "options",
+			"options": ["ambiguous", "specific"]
+		},{
+			"prompt": "What musical instrument is it associated with?",
+			"type": "text"
+		},{
+			"prompt": "Drag a box around what should be erased",
+			"type": "rectangle"
+		},{
+			"prompt": "Will a child approve?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Drag a box around the cluster",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around where it starts to fade",
+			"type": "rectangle"
+		},{
+			"prompt": "Is it promising or unpromising?",
+			"type": "options",
+			"options": ["promising", "unpromising"]
+		},{
+			"prompt": "Is it courageous or cowardly?",
+			"type": "options",
+			"options": ["courageous", "cowardly"]
+		},{
+			"prompt": "Draw a line to cut a vital connection",
+			"type": "line"
+		},{
+			"prompt": "Drag a box around where it needs decoration",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box to define an area that is safe",
+			"type": "rectangle"
+		},{
+			"prompt": "Is it a landscape or portrait?",
+			"type": "options",
+			"options": ["landscape", "portrait"]
+		},{
+			"prompt": "Click something to destroy",
+			"type": "point"
+		},{
+			"prompt": "The first ingredient in the recipe",
+			"type": "text"
+		},{
+			"prompt": "Drag a box around its primary talent",
+			"type": "rectangle"
+		},{
+			"prompt": "Draw a line that distorts time",
+			"type": "line"
+		},{
+			"prompt": "Drag a box around nothing",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around something boring",
+			"type": "rectangle"
+		},{
+			"prompt": "Draw a line that is sudden and unpredictable",
+			"type": "line"
+		},{
+			"prompt": "Drag a box around the last thing",
+			"type": "rectangle"
+		},{
+			"prompt": "Does it need holes?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Is it easy or hard?",
+			"type": "options",
+			"options": ["easy", "hard"]
+		},{
+			"prompt": "Drag a box around the cliche",
+			"type": "rectangle"
+		},{
+			"prompt": "Draw a line to break the silence",
+			"type": "line"
+		},{
+			"prompt": "Draw a line to emphasize the differences",
+			"type": "line"
+		},{
+			"prompt": "Does it repeat?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Does it have a choice?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Click what needs to be filled",
+			"type": "point"
+		},{
+			"prompt": "Is it alone?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Drag a box around the neck",
+			"type": "rectangle"
+		},{
+			"prompt": "Does it echo?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Can one give it away?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Can it be closed?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Click the outside",
+			"type": "point"
+		},{
+			"prompt": "Click an extreme",
+			"type": "point"
+		},{
+			"prompt": "Who would like it?",
+			"type": "text"
+		},{
+			"prompt": "Drag a box around what is free of error",
+			"type": "rectangle"
+		},{
+			"prompt": "Is it moving or still?",
+			"type": "options",
+			"options": ["moving", "still"]
+		},{
+			"prompt": "Is it connected or disconnected?",
+			"type": "options",
+			"options": ["connected", "disconnected"]
+		},{
+			"prompt": "Should it change or should the world change around it?",
+			"type": "options",
+			"options": ["it should change", "world should change"]
+		},{
+			"prompt": "Draw a line that is impossible",
+			"type": "line"
+		},{
+			"prompt": "Is it finished?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Does it want to continue or stop?",
+			"type": "options",
+			"options": ["continue", "stop"]
+		},{
+			"prompt": "Can it be seen in the dark?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Does it draw you in or push you out?",
+			"type": "options",
+			"options": ["draws in", "pushes out"]
+		},{
+			"prompt": "Drag a box around what is embarrassing",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around what can be monetized",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around something to magnify",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around something that needs an exquisite frame",
+			"type": "rectangle"
+		},{
+			"prompt": "Is it sensual or chaste?",
+			"type": "options",
+			"options": ["sensual", "chaste"]
+		},{
+			"prompt": "Is it more perfect than human?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Click something to mute",
+			"type": "point"
+		},{
+			"prompt": "Draw a line that represents a wall",
+			"type": "line"
+		},{
+			"prompt": "Is it more likely to be lost or found?",
+			"type": "options",
+			"options": ["lost", "found"]
+		},{
+			"prompt": "Is it better in parts or as a whole?",
+			"type": "options",
+			"options": ["in parts", "as a whole"]
+		},{
+			"prompt": "Is it more likely to change or stay the same?",
+			"type": "options",
+			"options": ["change", "stay the same"]
+		},{
+			"prompt": "Click the distraction",
+			"type": "point"
+		},{
+			"prompt": "Does it require a spotlight?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Is it a hero or villain?",
+			"type": "options",
+			"options": ["hero", "villain"]
+		},{
+			"prompt": "Draw a line to remove a restriction",
+			"type": "line"
+		},{
+			"prompt": "Drag a box around something to repeat",
+			"type": "rectangle"
+		},{
+			"prompt": "Click something to remember",
+			"type": "point"
+		},{
+			"prompt": "Drag a box around something to reverse",
+			"type": "rectangle"
+		},{
+			"prompt": "Is one more likely to subtract or add?",
+			"type": "options",
+			"options": ["subtract", "add"]
+		},{
+			"prompt": "Draw a line in the direction of the gradient",
+			"type": "line"
+		},{
+			"prompt": "State the problem in words as simply as possible",
+			"type": "text"
+		},{
+			"prompt": "Is it more likely to be stolen or gifted?",
+			"type": "options",
+			"options": ["stolen", "gifted"]
+		},{
+			"prompt": "Click where the play button ought to be",
+			"type": "point"
+		},{
+			"prompt": "Click where the pause button ought to be",
+			"type": "point"
+		},{
+			"prompt": "Drag a box around something that needs investigation",
+			"type": "rectangle"
+		},{
+			"prompt": "Drag a box around the mouth",
+			"type": "rectangle"
+		},{
+			"prompt": "Are you viewing it from the inside or outside?",
+			"type": "options",
+			"options": ["inside", "outside"]
+		},{
+			"prompt": "Can it be counterfeited?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Would it make sense upside down?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Draw a line along the spine",
+			"type": "line"
+		},{
+			"prompt": "Click the unacceptable color",
+			"type": "point"
+		},{
+			"prompt": "Drag a box around something to censor",
+			"type": "rectangle"
+		},{
+			"prompt": "Something nearby it most resembles",
+			"type": "text"
+		},{
+			"prompt": "Would it survive in water?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "The approximate age",
+			"type": "number"
+		},{
+			"prompt": "The ideal age",
+			"type": "number"
+		},{
+			"prompt": "The life expectancy in years",
+			"type": "number"
+		},{
+			"prompt": "What does it do best?",
+			"type": "text"
+		},{
+			"prompt": "Drag a box around something that is too complex",
+			"type": "rectangle"
+		},{
+			"prompt": "How many mistakes do you see?",
+			"type": "number"
+		},{
+			"prompt": "Click where it will start to branch",
+			"type": "point"
+		},{
+			"prompt": "The next word it will say",
+			"type": "text"
+		},{
+			"prompt": "Would your closest friend like it?",
+			"type": "options",
+			"options": ["yes", "no"]
+		},{
+			"prompt": "Draw a line to change the speed",
+			"type": "line"
+		},{
+			"prompt": "Is it for an artist or scientist?",
+			"type": "options",
+			"options": ["artist", "scientist"]
+		},{
+			"prompt": "What is written on the back?",
+			"type": "text"
+		}
+	]
+}
