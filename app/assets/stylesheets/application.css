@@ -10,4 +10,5 @@
  *
  *= require_self
  *= require ./vendor/normalize
+ *= require strategies
  */

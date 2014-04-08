@@ -32,12 +32,25 @@ app.views.AppView = Backbone.View.extend({
   },
     
   showRandomStrategy: function(){
-    var strategy = this.getRandomStrategy(),
+    var that = this,
+        strategy = this.getRandomStrategy(),
         asset = this.getRandomAsset(),
         options = $.extend({},strategy.toJSON(),asset.toJSON()),
-        maneuver = new app.models.Maneuver(options),
-        maneuver_view = new app.views.ManeuverView({model: maneuver});
-    this.$('#strategies').html(maneuver_view.render().$el);
+        maneuver = new app.models.Maneuver(options);
+    
+    // remove current view if it exists
+    if (this.current_view) {
+      this.current_view.remove();
+    }
+    
+    // initialize view
+    this.current_view = new app.views.ManeuverView({
+      parent: that,
+      model: maneuver
+    });
+    
+    // add view to page
+    this.$('#strategies').html(this.current_view.render().$el);
   },
   
   onFirstLoad: function(){

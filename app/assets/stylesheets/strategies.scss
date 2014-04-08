@@ -2,3 +2,132 @@
 @import "mixins";
 @import "keyframes";
 
+body {
+  background: $grayDarker;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+button,
+.button {
+  display: block;
+  background: $blue;
+  color: $white;
+  padding: 0.3em 0.6em;
+  border: none;
+  @include transition(background-color, 0.5s);
+  &:hover {
+    background: lighten($blue, 10%);
+  }
+  &:active {
+    background: lighten($blue, 20%);
+  }
+}
+
+.padded {
+  padding: 1em;
+}
+
+.maneuver {
+  width: 960px;
+  margin: 20px auto;
+  @include clearfix();
+  .prompt {
+    width: 300px;
+    float: left;
+    padding-top: 1em;
+    font-size: 2em;
+  }
+  .asset {
+    width: auto;
+    position: relative;
+    margin-left: 300px;
+    text-align: center;
+    img {
+      width: 100%;
+      @include box-shadow();
+    }
+  }
+  form {
+    margin-top: 0.5em;
+  }
+  input {
+    margin-top: 0.5em;
+    &.text {
+      width: 100%;
+    }
+    &.number {
+      width: 60%;
+      min-width: 100px;
+      max-width: 180px;
+    }
+  }
+  button {
+    margin-top: 0.5em;
+  }
+  .button-group button {
+    display: inline-block;
+    margin-right: 6px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  @media (min-width: 1200px) {
+    width: 1100px;
+  }
+  @media (max-width: 959px) {
+    width: 860px;
+    .prompt {
+      font-size: 1.5em;
+    }
+  }
+  @media (max-width: 859px) {
+    width: 760px;
+    .prompt {
+      width: 240px;
+      font-size: 1.2em;
+    }
+    .asset {
+      margin-left: 240px;
+    }
+  }
+  @media (max-width: 759px) {
+    width: auto;
+    margin: 0;
+    .prompt {
+      width: auto;
+      float: none;
+      padding-top: 0;
+    }
+    .asset {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+}
+
+.target {
+  cursor: pointer;
+}
+.canvas {
+  position: relative;
+  cursor: crosshair;
+  .rectangle {
+    display: none;
+    position: absolute;
+    border: 3px solid lighten($red, 10%);
+    @include box-shadow();
+  }
+  .line {
+    display: none;
+    height: 1px;
+    position: absolute;
+    border-top: 1px solid lighten($red, 10%);
+    border-bottom: 1px solid lighten($red, 10%);
+    background: lighten($red, 10%);
+  }
+}
+

@@ -1,0 +1,17 @@
+<div class="prompt">
+  <div class="padded">
+    <%=prompt%>
+    <div class="button-group">
+      <% _.each(options, function(option) { %>
+        <button type="button" class="submit-button"><%=option%></button>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<div class="asset">
+  <div class="padded">
+    <img src="<%=url%>" />
+  </div>
+</div>
+
