@@ -1,0 +1,72 @@
+@import "variables";
+@import "mixins";
+
+body {
+  background: $grayDarker;
+  color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+button,
+.button {
+  display: block;
+  background: $blue;
+  color: $white;
+  padding: 0.3em 0.6em;
+  border: none;
+  @include transition(background-color, 0.5s);
+  &:hover {
+    background: lighten($blue, 10%);
+  }
+  &:active {
+    background: lighten($blue, 20%);
+  }
+  &.large {
+    font-size: 2em;
+    padding: 0.6em 1.2em;
+  }
+  &.centered {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  background: darken($grayDarker, 5%);
+  padding: 20px 0;
+}
+.container {
+  width: 960px;
+  margin: 20px auto;
+  @media (max-width: 959px) {
+    width: auto;
+    margin: 0; 
+  }
+}
+.padded {
+  padding: 20px;
+}
+
+form.form {
+  padding: 20px 0;
+  label {
+    display: block;
+    margin-bottom: 0.3em;
+  }
+  input {
+    padding: 0.3em;
+    border: 0;
+    margin-bottom: 0.3em;
+  }
+  button {
+    display: inline-block;
+  }
+  &.large {
+    font-size: 2em;
+  }
+  
+}
+

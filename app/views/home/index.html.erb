@@ -1,1 +1,42 @@
-<p>Hello, World</p>
+<div class="container">
+  <div class="padded">    
+    <h1 class="title">Oblique Digital Strategies</h1>
+    <p class="description">
+      Inspired by <a href="http://en.wikipedia.org/wiki/Brian_Eno" target="_blank">Brian Eno</a>'s
+      <a href="http://www.rtqe.net/ObliqueStrategies/" target="_blank">Oblique Strategies</a>, this 
+      experiment intends to help break creative blocks by pairing 
+      <a href="http://digitalcollections.nypl.org/" target="_blank">digital images</a> with a set of
+      cryptic questions and instructions.     
+    </p>
+  </div>  
+</div>
+
+<div class="wrapper">  
+  <div class="container">
+    <div class="padded">
+      <%= link_to "Try With Random Images", strategies_url, :class=>"button large centered" %>
+    </div>  
+  </div>  
+</div>
+
+<div class="container">
+  <div class="padded">    
+    <form action="<%= strategies_url %>" method="get" class="form large">
+      <label for="keyword">Try With A Keyword</label>
+      <input type="text" name="keyword" value="" placeholder="Keyword" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>  
+</div>
+
+<div class="wrapper">  
+  <div class="container">
+    <div class="padded">    
+      <form action="<%= strategies_url %>" method="get" class="form large">
+        <label for="url">Use A Custom Image</label>
+        <input type="text" name="url" value="" placeholder="URL to image" />
+        <button type="submit">Submit</button>
+      </form>
+    </div>  
+  </div>  
+</div>

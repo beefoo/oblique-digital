@@ -2,34 +2,6 @@
 @import "mixins";
 @import "keyframes";
 
-body {
-  background: $grayDarker;
-  color: $white;
-}
-
-a {
-  text-decoration: none;
-}
-button,
-.button {
-  display: block;
-  background: $blue;
-  color: $white;
-  padding: 0.3em 0.6em;
-  border: none;
-  @include transition(background-color, 0.5s);
-  &:hover {
-    background: lighten($blue, 10%);
-  }
-  &:active {
-    background: lighten($blue, 20%);
-  }
-}
-
-.padded {
-  padding: 1em;
-}
-
 .loading {
   width: 100px;
   height: 100px;
@@ -51,7 +23,7 @@ button,
     width: 300px;
     float: left;
     padding-top: 1em;
-    font-size: 2em;
+    font-size: 2.4em;
   }
   .asset {
     width: auto;
@@ -100,6 +72,9 @@ button,
   }
   @media (min-width: 1200px) {
     width: 1100px;
+    .prompt {
+      font-size: 2.6em;
+    }    
   }
   @media (max-width: 959px) {
     width: 860px;
@@ -124,6 +99,7 @@ button,
       width: auto;
       float: none;
       padding-top: 0;
+      font-size: 1.5em;
     }
     .asset {
       margin-left: 0;

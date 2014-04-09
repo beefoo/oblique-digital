@@ -4,6 +4,8 @@ app.views.AppView = Backbone.View.extend({
 
   el: 'body',
   
+  custom_keyword: null,
+  custom_image: null,
   keywords: [
     'children', 'war', 'depression', 
     'nature', 'new york', 'stage', 'art',
@@ -12,22 +14,43 @@ app.views.AppView = Backbone.View.extend({
   ],
   loaded_keywords: [],
 
-  initialize: function() {
+  initialize: function(options) {
+    
     var that = this,
-        keyword = this.getRandomKeyword();
+        keyword = options.custom_keyword || this.getRandomKeyword();
     this.strategies = new app.collections.StrategyList;
     this.assets = new app.collections.AssetList;
     this.assets.keyword = keyword;
     this.strategies.fetch({
-      success: function(){             
-        that.assets.fetch({
-          success: function(response_assets){
-            console.log('Loaded ' + response_assets.length + ' assets around '+keyword);      
-            that.onFirstLoad();
-          }
-        });
+      success: function(){
+        
+        // User supplied a custom image
+        if (options.custom_image) {
+          that.assets.add({
+            image_url: options.custom_image,
+            credit: 'Unknown',
+            credit_url: '#'
+          });
+          that.onFirstLoad();
+        
+        // Otherwise retrieve images from server
+        } else {
+          that.assets.fetch({
+            success: function(response_assets){
+              console.log('Loaded ' + response_assets.length + ' assets around '+keyword);      
+              that.onFirstLoad();
+            }
+          });
+        }                   
+        
       }
-    });    
+    });
+    if (options.custom_keyword) {
+      this.custom_keyword = options.custom_keyword;
+    }
+    if (options.custom_image) {
+      this.custom_image = options.custom_image;
+    } 
   },
   
   getRandomAsset: function(){
@@ -36,7 +59,8 @@ app.views.AppView = Backbone.View.extend({
     return this.assets.at(random);
   },
   
-  getRandomKeyword: function(){
+  getRandomKeyword: function(){   
+    
     // only return one we haven't loaded yet
     var queue = _.difference(this.keywords, this.loaded_keywords),
         len = queue.length,
@@ -100,9 +124,10 @@ app.views.AppView = Backbone.View.extend({
     
     // add view to page
     this.$('#strategies').html(this.current_view.render().$el);
+    this.$('#strategies .prompt input').focus();
     
     // randomly load more assets
-    this.randomlyLoadMoreAssets();
+    if (!this.custom_image && !this.custom_keyword) this.randomlyLoadMoreAssets();
   },
   
   onFirstLoad: function(){

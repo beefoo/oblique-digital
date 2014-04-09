@@ -33,14 +33,21 @@ window.app = {
 app.routers.MainRouter = Backbone.Router.extend({
 
   routes: {
-    '': 'random',
-    'demo': 'demo'
+    'strategies?keyword=:keyword': 'keyword',
+    'strategies?url=:url': 'url',
+    'strategies': 'random'
   },
   
-  demo: function(){},
+  keyword: function(keyword){
+    app.views.main = new app.views.AppView({custom_keyword: keyword});
+  },
   
   random: function(){
-    app.views.main = new app.views.AppView();
+    app.views.main = new app.views.AppView({});
+  },
+  
+  url: function(url){
+    app.views.main = new app.views.AppView({custom_image: url});
   }
 
 });

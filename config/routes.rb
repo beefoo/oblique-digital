@@ -1,7 +1,8 @@
 ObliqueDigital::Application.routes.draw do
 
-  root :to => 'strategies#index'
-  
   match 'nypl' => 'nypl#index', :as => :assets
+  match 'strategies' => 'strategies#index', :as => :strategies
+  
+  root :to => 'home#index'
 
 end
