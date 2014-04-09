@@ -70,3 +70,11 @@ form.form {
   
 }
 
+footer {
+  margin-top: 80px;
+  background: darken($grayDarker, 5%);
+  a {
+    color: $white;
+    font-size: 1.4em;
+  }
+}
